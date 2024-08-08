@@ -1,5 +1,5 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react'
-function Task3() {
+function Window() {
     const [windowwidth,setwindowwidth] = useState(window.innerWidth)
     useEffect(()=>{
         let useWindowResize  = ()=>{
@@ -12,7 +12,7 @@ function Task3() {
           navbar.style.height = '100vh'
         if(windowwidth<500){
             navbar.style.backgroundColor = 'red'
-            console.log("UseEffect")
+            // console.log("UseEffect")
         }
         else if(windowwidth<700){
             navbar.style.backgroundColor = 'pink'
@@ -28,7 +28,7 @@ function Task3() {
         let navbar = document.getElementsByClassName('navbar')[0]
         if(windowwidth<500){
             navbar.style.backgroundColor = 'red'
-            console.log("UseLay OUt...")
+            // console.log("UseLay OUt...")
         }
         else if(windowwidth<700){
             navbar.style.backgroundColor = 'pink'
@@ -48,4 +48,4 @@ function Task3() {
     </div>
   )
 }
-export default Task3
+export default Window

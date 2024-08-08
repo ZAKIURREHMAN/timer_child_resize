@@ -4,15 +4,15 @@ export default class Child1 extends Component {
     constructor(props){
         super(props)
     }
-     ChangeData = (e)=>{
+    changeData(e){
         let childvalue = e.target.value;
-        this.props.ChildData(childvalue)
+        this.props.changeData(childvalue)
     }
   render() {
     return (
       <div>
         <h2>This Input field is presend in Child Component</h2>
-        <input type="text" placeholder='Enter Your Data' onChange={this.ChangeData} />
+        <input type="text" placeholder='Enter Your Data' onChange={this.changeData} />
       </div>
     )
   }
